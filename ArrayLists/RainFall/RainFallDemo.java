@@ -18,7 +18,6 @@ public class RainFallDemo {
                                     year.gettotalRain(), year.getavgRain(), year.getHighest(), year.getLowest()));
         System.exit(0);
     }
-
     private static void getValues(double[] array) {
         String input;
 

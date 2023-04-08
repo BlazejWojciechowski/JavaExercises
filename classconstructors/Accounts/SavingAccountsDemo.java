@@ -2,10 +2,8 @@ package Zadania.KlasyKonstruktory;
 
 import javax.swing.*;
 
-public class SavingAccountsDemo
-{
-    public static void main(String[] args)
-    {
+public class SavingAccountsDemo {
+    public static void main(String[] args) {
         String input;
         double rate, balance, yearRate, monthRate, value, amount;
         int months;
@@ -24,8 +22,7 @@ public class SavingAccountsDemo
 
         SavingAccounts sa = new SavingAccounts(monthRate, balance,  months);
 
-        for (int i = 1; i <= sa.getMonthsNumber(); i++)
-        {
+        for (int i = 1; i <= sa.getMonthsNumber(); i++) {
             input = JOptionPane.showInputDialog("Podaj kwotę zdeponowaną w " + i + " miesiącu na koncie:");
             value = Double.parseDouble(input);
             akuDepoValue += value;
@@ -40,9 +37,10 @@ public class SavingAccountsDemo
             akuRateValue += amount;
             sa.deposit(amount);
         }
-        JOptionPane.showMessageDialog(null, String.format("Stan końcowy: %.1f złotych.\nŁączna suma" +
-                                    " zdeponowanych środków: %.1f złotych.\nŁączna suma wypłaconych środków: %.1f złotych." +
-                                    "\nŁączna wartość odsetek: %.1f złotych.", sa.getAccountBalance(), akuDepoValue
-                                    , akuWithValue, akuRateValue) );
+        JOptionPane.showMessageDialog(null, String.format
+                                    "Stan końcowy: %.1f złotych.\nŁączna suma" +
+                                    " zdeponowanych środków: %.1f złotych.\nŁączna suma wypłaconych środków: %.1f " +
+                                            "złotych.\nŁączna wartość odsetek: %.1f złotych.",
+                                    sa.getAccountBalance(), akuDepoValue, akuWithValue, akuRateValue));
     }
 }

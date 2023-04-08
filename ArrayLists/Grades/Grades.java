@@ -8,7 +8,6 @@ public class Grades {
     private final double[][] scores;
     private final double[] avgScores;
     private final double[] lowestScore;
-
     public Grades(String[] stu, int[] gra, double[][] sco, double[] avg, double[] lowSco) {
         students = stu;
         grades = gra;
@@ -47,7 +46,6 @@ public class Grades {
             }
         }
     }
-
     public void setGrades() {
         double avgValue;
         int grad = 0;
@@ -68,7 +66,6 @@ public class Grades {
             grades[index] = grad;
         }
     }
-
     public void setAvgScores() {
         final int ROWS = 5;
         final int COLS = 4;
@@ -86,7 +83,6 @@ public class Grades {
             avgScores[row] = avgSc;
         }
     }
-
     public void setlowestScore() {
         double lowest;
         final int ROWS = 5;
@@ -103,7 +99,6 @@ public class Grades {
             lowestScore[row] = lowest;
         }
     }
-
     public void showValues() {
 
         final int ROWS = 5;
@@ -116,7 +111,6 @@ public class Grades {
                                             "%.1f oraz ocenę %d \n", getStuds(row), getAvg(row), getGrade(row)));
         }
     }
-
     public String getStuds(int value) {
         String studen;
         studen = students[value];

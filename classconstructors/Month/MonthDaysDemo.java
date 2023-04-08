@@ -2,10 +2,8 @@ package Zadania.KlasyKonstruktory;
 
 import javax.swing.*;
 
-public class MonthDaysDemo
-{
-    public static void main(String[] args)
-    {
+public class MonthDaysDemo {
+    public static void main(String[] args) {
         boolean status1, status2;
         String input;
         int monthDays, year;

@@ -4,9 +4,7 @@ import java.util.Random;
 
 public class DoubleArray {
     private int [][] arrayList;
-
-    public DoubleArray(int[][] arrayL)
-    {
+    public DoubleArray(int[][] arrayL) {
         arrayList = arrayL;
     }
     public void setArrayList() {
@@ -47,8 +45,7 @@ public class DoubleArray {
         final int COL = 20;
         int total = 0;
 
-            for (int col = 0; col < COL; col++)
-            {
+            for (int col = 0; col < COL; col++) {
                 total += arrayList[value][col];
             }
         return total;

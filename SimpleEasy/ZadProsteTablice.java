@@ -2,10 +2,8 @@ package Zadania.Proste;
 
 import java.util.ArrayList;
 
-public class ZadProsteTablice
-{
-    public static void main(String[] args)
-    {
+public class ZadProsteTablice {
+    public static void main(String[] args) {
         /*
         String[] countries = {"Polska", "Niemcy", "Holandia", "Belgia"};
         int[] peoples = {40, 80, 15, 25};

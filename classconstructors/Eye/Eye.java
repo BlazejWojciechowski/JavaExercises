@@ -2,39 +2,28 @@ package Zadania.KlasyKonstruktory;
 
 import java.util.Random;
 
-public class Eye
-{
+public class Eye {
     private int sides;
     private int value;
     private String thing;
     private int points;
-
     public Eye(int numSides)
     {
         sides = numSides;
     }
-
-    public void roll()
-    {
+    public void roll() {
         Random rand = new Random();
 
         value = rand.nextInt(sides) + 1;
     }
-
-    public int getSides()
-    {
+    public int getSides() {
         return sides;
     }
-
-    public int getValue()
-    {
+    public int getValue() {
         return value;
     }
-
-    public String getThing(int number)
-    {
-        switch (number)
-        {
+    public String getThing(int number) {
+        switch (number) {
             case 1:
                 thing = "but";
                 break;
@@ -56,8 +45,7 @@ public class Eye
         }
         return thing;
     }
-    public int getPoints(String name)
-    {
+    public int getPoints(String name) {
         if (thing.equalsIgnoreCase("but"))
             points = 1;
         else if (thing.equalsIgnoreCase("mała rybka"))

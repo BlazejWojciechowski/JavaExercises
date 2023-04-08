@@ -4,10 +4,8 @@ import Zadania.KlasyKonstruktory.RetailItem;
 
 import javax.swing.*;
 
-public class RetailItemDemo
-{
-    public static void main(String[] args)
-    {
+public class RetailItemDemo {
+    public static void main(String[] args) {
         /*
         RetailItem item1 = new RetailItem("Kurtka", 12, 159.95);
         RetailItem item2 = new RetailItem("Markowe dźinsy", 40, 134.95);

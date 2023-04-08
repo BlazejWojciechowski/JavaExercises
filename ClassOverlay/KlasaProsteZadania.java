@@ -2,10 +2,8 @@ package Zadania.KlasyNakładkowe;
 
 import javax.swing.*;
 
-public class KlasaProsteZadania
-{
-    public static void main(String[] args)
-    {
+public class KlasaProsteZadania {
+    public static void main(String[] args) {
 
         /* zad. 1
         String input;

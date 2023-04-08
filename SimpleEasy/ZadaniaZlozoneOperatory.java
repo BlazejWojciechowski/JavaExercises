@@ -3,10 +3,8 @@ package Zadania.Proste;
 import javax.swing.*;
 import java.util.Scanner;
 
-public class ZadaniaZlozoneOperatory
-{
-    public static void main(String[] args)
-    {
+public class ZadaniaZlozoneOperatory {
+    public static void main(String[] args) {
         /* zlozone operatory
         zad.1
         int x = 346728;

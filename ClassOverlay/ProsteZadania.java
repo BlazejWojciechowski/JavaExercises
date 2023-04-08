@@ -7,10 +7,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ProsteZadania
-{
-    public static void main(String[] args) throws IOException
-    {
+public class ProsteZadania {
+    public static void main(String[] args) throws IOException {
         /*
         zad.1
         String input;

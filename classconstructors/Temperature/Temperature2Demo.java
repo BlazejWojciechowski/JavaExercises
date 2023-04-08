@@ -2,10 +2,8 @@ package Zadania.KlasyKonstruktory;
 
 import javax.swing.*;
 
-public class Temperature2Demo
-{
-    public static void main(String[] args)
-    {
+public class Temperature2Demo {
+    public static void main(String[] args) {
         boolean status;
         double temper;
         String input;
@@ -37,7 +35,5 @@ public class Temperature2Demo
             JOptionPane.showMessageDialog(null, "Woda wrze");
         else
             JOptionPane.showMessageDialog(null, "Nic się nie dzieje z wodą.");
-
-
     }
 }

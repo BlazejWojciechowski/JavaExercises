@@ -2,10 +2,8 @@ package Zadania.KlasyKonstruktory;
 
 import javax.swing.*;
 
-public class CoinDemoGame
-{
-    public static void main(String[] args)
-    {
+public class CoinDemoGame {
+    public static void main(String[] args) {
         final int NUM_SIDES = 2;
         int summ = 0;
         String input;
@@ -13,9 +11,7 @@ public class CoinDemoGame
 
         Coin game = new Coin();
 
-
-        do
-        {
+        do {
             input = JOptionPane.showInputDialog("Wybierz wartość: 5, 10, 20 groszy:");
             pickValue = Integer.parseInt(input);
 

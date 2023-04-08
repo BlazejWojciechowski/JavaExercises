@@ -2,10 +2,8 @@ package Zadania.KlasyKonstruktory;
 
 import javax.swing.*;
 
-public class PatientProcedureDemo
-{
-    public static void main(String[] args)
-    {
+public class PatientProcedureDemo {
+    public static void main(String[] args) {
     String name;
     double priceProcs;
 
@@ -21,9 +19,9 @@ public class PatientProcedureDemo
         System.out.println();
         System.out.println("Badanie numer 1\t\t\t\t\tBadanie numer 2\t\t\t\t\tBadanie numer 3");
         System.out.println("_________________________________________________________________________________");
-        System.out.println("Nazwa: " + proc1.getNameProcedure() + "\t" + proc2.getNameProcedure() + "\t\t\t\t" + proc3.getNameProcedure());
+        System.out.println("Nazwa: " + proc1.getNameProcedure() + "\t" +
+                            proc2.getNameProcedure() + "\t\t\t\t" +
+                            proc3.getNameProcedure());
         System.out.println();
     }
-
 }
-

@@ -1,7 +1,6 @@
 package Zadania.KlasyKonstruktory;
 
-public class Rectangle
-{
+public class Rectangle {
     private double lenght;
     private double width;
 
@@ -10,32 +9,24 @@ public class Rectangle
       @param len Długość prostokąta
       @param w Szerokość prostokąta
      */
-
-    public Rectangle(double len, double w)
-    {
+    public Rectangle(double len, double w) {
         lenght = len;
         width = w;
     }
-
     /**
      Metoda setLenght zapisuje wartość
      w polu lenght.
      @param len Wartość zapisywana w polu lenght
      */
-
-    public void setLenght(double len)
-    {
+    public void setLenght(double len) {
         lenght = len;
     }
-
     /**
      Metoda setWidth zapisuje wartość
      w polu width.
      @param w Wartość zapisywana w polu lenght
      */
-
-    public void setWidth(double w)
-    {
+    public void setWidth(double w) {
         width = w;
     }
 
@@ -44,9 +35,7 @@ public class Rectangle
     obiektu typu Rectangle.
     @return Wartość z pola lenght
     */
-
-    public double getLenght()
-    {
+    public double getLenght() {
         return lenght;
     }
 
@@ -55,21 +44,15 @@ public class Rectangle
      obiektu typu Rectangle.
      @return Wartość z pola width
      */
-
-    public double getWidth()
-    {
+    public double getWidth() {
         return width;
     }
-
     /**
      Metoda getArea zwraca powierzchnię
      obiektu typu Rectangle.
      @return Iloczyn pól lenght i width.
      */
-
-    public double getArea()
-    {
+    public double getArea() {
         return lenght * width;
     }
-
 }

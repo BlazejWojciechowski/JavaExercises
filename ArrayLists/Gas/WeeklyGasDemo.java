@@ -20,17 +20,12 @@ public class WeeklyGasDemo {
 
         weekG.setWeeklyGa();
         weekG.setMonths(months);
-
         element = weekG.getLowestGas();
         weekG.getMonth(element);
-
         element = weekG.getHighestGas();
         weekG.getMonth(element);
-
         weekG.getAvgMonth();
-
         weekG.makePrintwriter();
-
         weekG.showValues();
     }
 }

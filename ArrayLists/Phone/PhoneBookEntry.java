@@ -6,12 +6,10 @@ import java.util.ArrayList;
 public class PhoneBookEntry {
     private final ArrayList<String> lastName;
     private final ArrayList<Integer> phoneNumber;
-
     public PhoneBookEntry(ArrayList<String> lastNa, ArrayList<Integer> phoneNu) {
         lastName = lastNa;
         phoneNumber = phoneNu;
     }
-
     public void setLastName() {
         String input;
         final int end = 5;
@@ -21,7 +19,6 @@ public class PhoneBookEntry {
             lastName.add(input);
         }
     }
-
     public void setPhoneNumber() {
         String input;
         final int end = 5;

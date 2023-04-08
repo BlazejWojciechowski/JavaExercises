@@ -6,10 +6,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class ZadScanner
-{
-    public static void main(String[] args) throws IOException
-    {
+public class ZadScanner {
+    public static void main(String[] args) throws IOException {
 
 
         /* Tworzenie nowego pliku i zapisywanie w nim swojego imienia

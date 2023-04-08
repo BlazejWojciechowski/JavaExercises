@@ -2,10 +2,8 @@ package Zadania.KlasyNakładkowe;
 
 import javax.swing.*;
 
-public class PlayWordsDemo
-{
-    public static void main(String[] args)
-    {
+public class PlayWordsDemo {
+    public static void main(String[] args) {
         StringBuilder s1 = new StringBuilder();
         String s2, s3;
         char mark;
@@ -17,11 +15,9 @@ public class PlayWordsDemo
         input = JOptionPane.showInputDialog("Podaj jakiś łancuch znaków:");
         char [] marks = new char[input.length()];
 
-        for (int row = 0; row < input.length(); row++)
-        {
+        for (int row = 0; row < input.length(); row++) {
             marks[row] = input.charAt(row);
         }
-
         strb = PlayWords.arrayToString(marks);
         wordCount = PlayWords.wordCount(input);
         mark = PlayWords.mostFrequent(input);

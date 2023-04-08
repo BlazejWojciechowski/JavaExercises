@@ -6,9 +6,7 @@ import java.util.Scanner;
 
 public class Baseball {
     private final String[] baseballTeams;
-
-    public Baseball(String[] baseteam)
-    {
+    public Baseball(String[] baseteam) {
         baseballTeams = baseteam;
     }
     public void setBaseballTeams() throws IOException {

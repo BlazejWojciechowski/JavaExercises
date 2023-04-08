@@ -2,10 +2,8 @@ package Zadania.KlasyKonstruktory;
 
 import javax.swing.*;
 
-public class ParkingMeterDemo
-{
-    public static void main(String[] args)
-    {
+public class ParkingMeterDemo {
+    public static void main(String[] args) {
         String input, make, model, color, officerName, str;
         int registration, parkedMinutes, boughtMinutes, ofifcerID;
         int cash;
@@ -19,12 +17,10 @@ public class ParkingMeterDemo
 
         input = JOptionPane.showInputDialog("Podaj liczbę minut zaparkowanego auta");
         parkedMinutes = Integer.parseInt(input);
-
         ParkedCar car = new ParkedCar(make, model, color, registration, parkedMinutes);
 
         input = JOptionPane.showInputDialog("Podaj liczbę wykupionych minut");
         boughtMinutes = Integer.parseInt(input);
-
         ParkingMeter meter = new ParkingMeter(boughtMinutes);
 
         officerName = JOptionPane.showInputDialog("Podaj nazwisko oficera");
@@ -32,19 +28,14 @@ public class ParkingMeterDemo
         ofifcerID = Integer.parseInt(input);
 
         PoliceOfficer police = new PoliceOfficer(officerName, ofifcerID);
-
         ParkingTicket ticket = new ParkingTicket(car, meter, police);
-
         cash = ticket.getTicket(parkedMinutes, boughtMinutes);
 
-        if (cash >= 50)
-        {
+        if (cash >= 50) {
             str = ticket.toString();
             JOptionPane.showMessageDialog(null, str);
         }
         else
             JOptionPane.showMessageDialog(null, "Nie ma żadnego mandatu.");
-
-
     }
 }

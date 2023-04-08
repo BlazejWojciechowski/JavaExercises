@@ -5,10 +5,8 @@ import java.io.PrintWriter;
 import java.util.Random;
 import java.util.Scanner;
 
-public class ZadPetle
-{
-    public static void main(String[] args)
-    {
+public class ZadPetle {
+    public static void main(String[] args) {
         /* zad.1 factorial result
 
         int [] tablica = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};

@@ -2,71 +2,49 @@ package Zadania.KlasyKonstruktory;
 
 import java.util.Locale;
 
-public class Employee
-{
+public class Employee {
     private String name;
     private int idNumber;
     private String department;
     private String position;
-
-    public Employee (String nam, int num, String dep, String pos)
-    {
+    public Employee (String nam, int num, String dep, String pos) {
      name = nam;
      idNumber = num;
      department = dep;
      position = pos;
     }
-
-    public Employee (String na, int nu)
-    {
+    public Employee (String na, int nu) {
         department = "";
         position = "";
     }
-    public Employee()
-    {
+    public Employee() {
         name = "";
         idNumber = 0;
         department = "";
         position = "";
     }
-
-    public void setName (String sName)
-    {
+    public void setName (String sName) {
         name = sName;
     }
-
-    public void setIdNumber (int sidNumber)
-    {
+    public void setIdNumber (int sidNumber) {
         idNumber = sidNumber;
     }
-
-    public void setDepartment (String sDep)
-    {
+    public void setDepartment (String sDep) {
         department = sDep;
     }
-
-    public void setPosition (String sPos)
-    {
+    public void setPosition (String sPos) {
         position = sPos;
     }
-
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
-
-    public int getIdNumber ()
-    {
+    public int getIdNumber () {
         return idNumber;
     }
-
-    public String getDepartment()
-    {
+    public String getDepartment() {
         return department;
     }
-
-    public String getPosition()
-    {
+    public String getPosition() {
         return position;
     }
 }

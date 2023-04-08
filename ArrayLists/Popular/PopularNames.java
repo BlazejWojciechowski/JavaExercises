@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class PopularNames {
     private final String[] girlNames;
     private final String[] boyNames;
-
     public PopularNames(String[] girlNam, String[] boyNam) {
         girlNames = girlNam;
         boyNames = boyNam;

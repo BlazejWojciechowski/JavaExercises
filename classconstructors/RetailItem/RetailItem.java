@@ -3,17 +3,15 @@ package Zadania.KlasyKonstruktory;
 import Zadania.Wyjątki.WrongQuantity;
 import Zadania.Wyjątki.WrongValue;
 
-public class RetailItem
-{
+public class RetailItem {
     private String description;
     private int unitsOnHand;
     private double price;
     private int buyUnits;
 
-    public RetailItem()
-    {}
-    public RetailItem(double price, int unitsOnHand) throws WrongValue, WrongQuantity
-    {
+    public RetailItem() {
+    }
+    public RetailItem(double price, int unitsOnHand) throws WrongValue, WrongQuantity {
         if (price < 0)
             throw new WrongValue(price);
 
@@ -24,64 +22,45 @@ public class RetailItem
 
         this.unitsOnHand = unitsOnHand;
     }
-    public RetailItem (String desc, int units,double pric)
-    {
+    public RetailItem (String desc, int units,double pric) {
         description = desc;
         unitsOnHand = units;
         price = pric;
     }
-    public RetailItem(RetailItem object, int buyUnits)
-    {
+    public RetailItem(RetailItem object, int buyUnits) {
         this.description = object.description;
         this.unitsOnHand = object.unitsOnHand;
         this.price = object.price;
         this.buyUnits = buyUnits;
     }
-
-    public void setDescription(String des)
-    {
+    public void setDescription(String des) {
         description = des;
     }
-
-    public void setUnitsOnHand(int uni)
-    {
+    public void setUnitsOnHand(int uni) {
         unitsOnHand = uni;
     }
-
-    public void setPrice(double pr)
-    {
+    public void setPrice(double pr) {
         price = pr;
     }
-
-    public String getDescription()
-    {
+    public String getDescription() {
         return description;
     }
-
-    public int getUnitsOnHand()
-    {
+    public int getUnitsOnHand() {
         return unitsOnHand;
     }
-
-    public double getPrice()
-    {
+    public double getPrice() {
         return price;
     }
-    public int getBuyUnits()
-    {
+    public int getBuyUnits() {
         return buyUnits;
     }
-    public double getSubtotal()
-    {
+    public double getSubtotal() {
         return price * buyUnits;
     }
-    public double getTax()
-    {
+    public double getTax() {
         return 0.23 * getSubtotal();
     }
-    public double getTotal()
-    {
+    public double getTotal() {
         return getSubtotal() + getTax();
     }
-
 }

@@ -4,40 +4,31 @@ import Zadania.KlasyObiekty.Month;
 
 import javax.swing.*;
 
-public class MonthDemo2 extends Month
-{
-    public static void main(String[] args)
-    {
+public class MonthDemo2 extends Month {
+    public static void main(String[] args) {
 
-        try
-        {
+        try {
             Month mon1 = new Month(1);
 
             System.out.println(mon1.getMonthNumber());
         }
-        catch (WrongValueofMonth m)
-        {
+        catch (WrongValueofMonth m) {
             System.out.println(m.getMessage());
         }
-        finally
-        {
+        finally {
             System.out.println("Koniec pierwszego bloku");
         }
 
-        try
-        {
+        try {
             Month mon2 = new Month("Listopad");
 
             System.out.println(mon2.getMonthName());
         }
-        catch (WrongStringofMonth s)
-        {
+        catch (WrongStringofMonth s) {
             System.out.println(s.getMessage());
         }
-        finally
-        {
+        finally {
             System.out.println("Koniec drugiego bloku");
         }
-
     }
 }

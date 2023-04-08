@@ -3,8 +3,7 @@ package Zadania.Proste;
 import javax.swing.*;
 import java.util.Random;
 
-public class ZadMetodycz2
-{
+public class ZadMetodycz2 {
     /* zad.1 Verification of digits
     public static void main(String[] args)
     {

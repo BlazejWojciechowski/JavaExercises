@@ -3,7 +3,6 @@ package Zadania.KlasyTabliceArrayList;
 public class DriverExamDemo {
     private final String[] examAnswers = new String[20];
     private final String[] playerAnswers = new String[20];
-
     public DriverExamDemo(String[] eAnswers, String[] playAns) {
         for (int index = 0; index < eAnswers.length; index++) {
             examAnswers[index] = eAnswers[index];

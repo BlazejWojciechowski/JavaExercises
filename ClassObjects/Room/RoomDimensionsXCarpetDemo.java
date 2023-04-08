@@ -2,12 +2,11 @@ package Zadania.KlasyObiekty;
 
 import javax.swing.*;
 
-public class RoomDimensionsXCarpetDemo
-{
-    public static void main(String[] args)
-    {
+public class RoomDimensionsXCarpetDemo {
+    public static void main(String[] args) {
         String input, str;
         double length, width, area, carpetCost;
+
         input = JOptionPane.showInputDialog("Podaj długość pomieszczenia.");
         length = Double.parseDouble(input);
         input = JOptionPane.showInputDialog("Podaj szerokość pomieszczenia.");

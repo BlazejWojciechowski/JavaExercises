@@ -2,10 +2,8 @@ package Zadania.KlasyNakładkowe;
 
 import javax.swing.*;
 
-public class TelephoneDemo
-{
-    public static void main(String[] args)
-    {
+public class TelephoneDemo {
+    public static void main(String[] args) {
         String input;
         String str;
         String numberLetters;
@@ -22,10 +20,6 @@ public class TelephoneDemo
 
         numberLetters = Telephone.change(str);
         formatted = Telephone.format(numberLetters);
-
         JOptionPane.showMessageDialog(null, "Podany numer po przekształceniu to " + formatted);
-
-
-
     }
 }

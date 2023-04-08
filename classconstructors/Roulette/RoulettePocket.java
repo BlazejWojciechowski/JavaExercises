@@ -1,17 +1,12 @@
 package Zadania.KlasyKonstruktory;
 
-public class RoulettePocket
-{
+public class RoulettePocket {
     private int pocketNumber;
     private String pocketColor;
-
-    public RoulettePocket(int number)
-    {
+    public RoulettePocket(int number) {
         pocketNumber = number;
     }
-
-    public String getPocketColor(int numberP)
-    {
+    public String getPocketColor(int numberP) {
 
         if (numberP == 0)
             pocketColor = "Zielony";
@@ -40,11 +35,9 @@ public class RoulettePocket
             else
                 pocketColor = "Czarne";
 
-        else if (numberP > 36 || numberP < 0)
-        {
+        else if (numberP > 36 || numberP < 0) {
             pocketColor = "Nieprawidłowa liczba spoza przedziału.";
         }
-
         return pocketColor;
     }
 }

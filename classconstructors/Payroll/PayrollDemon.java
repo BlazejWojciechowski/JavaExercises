@@ -6,8 +6,7 @@ import Zadania.Wyjątki.WrongPayRate;
 
 import java.util.Scanner;
 
-public class PayrollDemon
-{
+public class PayrollDemon {
     public static void main(String[] args) throws WrongPayRate {
         Scanner keyboard = new Scanner(System.in);
         String input;
@@ -26,6 +25,5 @@ public class PayrollDemon
 
         System.out.println(employee1.getName() + " o numerze ID: " + employee1.getIdNumber() + " zarobił w tym miesiącu: "
                             + employee1.getPaidValue() + " złotych.");
-
     }
 }

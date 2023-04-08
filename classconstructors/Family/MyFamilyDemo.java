@@ -2,10 +2,8 @@ package Zadania.KlasyKonstruktory;
 
 import Zadania.KlasyKonstruktory.MyFamily;
 
-public class MyFamilyDemo
-{
-    public static void main(String[] args)
-    {
+public class MyFamilyDemo {
+    public static void main(String[] args) {
         MyFamily person1 = new MyFamily("Błażej Wojciechowski", "Łąkowa 29/1", 30, 733596457);
         MyFamily person2 = new MyFamily("Karolina Radtke", "Amona 38H", 23, 518893670);
         MyFamily person3 = new MyFamily("Barbara Wojciechowska", "Poznanska 10/50", 1, 590567894);

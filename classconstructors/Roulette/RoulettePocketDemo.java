@@ -2,10 +2,8 @@ package Zadania.KlasyKonstruktory;
 
 import java.util.Scanner;
 
-public class RoulettePocketDemo
-{
-    public static void main(String[] args)
-    {
+public class RoulettePocketDemo {
+    public static void main(String[] args) {
         String input;
         int number;
         String pocketColor;
@@ -16,7 +14,6 @@ public class RoulettePocketDemo
         number = keyboard.nextInt();
 
         RoulettePocket rp = new RoulettePocket(number);
-
         pocketColor = rp.getPocketColor(number);
         System.out.println("Kolor w podanym przedziale to: " + pocketColor);
     }

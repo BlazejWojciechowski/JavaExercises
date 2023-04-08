@@ -74,7 +74,6 @@ public class WeeklyGas {
                 avg += weeklyGa[index];
                 index++;
             }
-
             System.out.printf("Średnia z miesiąca %s to %.5f .", getMon(row), (avg / WEEKS));
             System.out.println();
             avgMonths[row] = avg / WEEKS;
@@ -138,7 +137,6 @@ public class WeeklyGas {
             index = 11;
             month = months[index];
         }
-
         System.out.print(" w tygodniu numer " + (week + 1) + " w miesiącu " + month + ".");
         System.out.println();
     }

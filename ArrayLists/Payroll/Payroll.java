@@ -5,7 +5,6 @@ public class Payroll {
     private int[] hours;
     private double[] payRate;
     private double[] wages;
-
     public Payroll(int[] iD, int[] h, double[]pay, double[] wag) {
         employeeId = iD;
         hours = h;

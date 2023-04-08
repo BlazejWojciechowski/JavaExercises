@@ -1,52 +1,39 @@
 package Zadania.KlasyKonstruktory;
 
-public class SavingAccounts
-{
+public class SavingAccounts {
     private double monthRate;
     private double accountBalance;
     private int monthsNumber;
-
-    public SavingAccounts( double yearR, double accountB,  int monthsN)
-    {
+    public SavingAccounts( double yearR, double accountB,  int monthsN) {
         monthRate = yearR;
         accountBalance = accountB;
         monthsNumber = monthsN;
     }
-    public SavingAccounts()
-    {
+    public SavingAccounts() {
         accountBalance = 0;
     }
-
-    public void setMonthRate(double year)
-    {
+    public void setMonthRate(double year) {
         monthRate = year;
     }
-    public void setAccountBalance(double account)
-    {
+    public void setAccountBalance(double account) {
         accountBalance = account;
     }
-    public void setMonthsNumber(int month)
-    {
+    public void setMonthsNumber(int month) {
         monthsNumber = month;
     }
-    public void deposit(double amount)
-    {
+    public void deposit(double amount) {
         accountBalance += amount;
     }
-    public void withdraw(double amount)
-    {
+    public void withdraw(double amount) {
         accountBalance += amount;
     }
-    public double getMonthRate()
-    {
+    public double getMonthRate() {
         return monthRate;
     }
-    public double getAccountBalance()
-    {
+    public double getAccountBalance() {
         return accountBalance;
     }
-    public int getMonthsNumber()
-    {
+    public int getMonthsNumber() {
         return monthsNumber;
     }
 }

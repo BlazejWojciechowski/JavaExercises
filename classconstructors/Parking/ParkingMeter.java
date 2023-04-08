@@ -1,15 +1,11 @@
 package Zadania.KlasyKonstruktory;
 
-public class ParkingMeter
-{
+public class ParkingMeter {
     private int boughtMinutes;
-
-    public ParkingMeter(int boughtMinutes)
-    {
+    public ParkingMeter(int boughtMinutes) {
         this.boughtMinutes = boughtMinutes;
     }
-    public int getBoughtMinutes()
-    {
+    public int getBoughtMinutes() {
         return boughtMinutes;
     }
 }

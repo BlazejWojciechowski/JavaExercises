@@ -6,7 +6,6 @@ public class Question {
     private final String[] questions;
     private final int[][] answers;
     private final int[] correctAnswers;
-
     public Question(String[] questions, int[][] answers, int[] correctAnswers) {
         this.questions = questions;
         this.answers = answers;

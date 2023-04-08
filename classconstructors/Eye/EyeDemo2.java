@@ -1,9 +1,7 @@
 package Zadania.KlasyKonstruktory;
 
-public class EyeDemo2
-{
-    public static void main(String[] args)
-    {
+public class EyeDemo2 {
+    public static void main(String[] args) {
         final int NUM_SIDES = 6;
         int computerValue = 0, playerValue = 0;
         int computerPoints = 0;
@@ -12,8 +10,7 @@ public class EyeDemo2
         Eye computerDie = new Eye(NUM_SIDES);
         Eye playerDie = new Eye(NUM_SIDES);
 
-        for (int i = 0; i < 10; i++)
-        {
+        for (int i = 0; i < 10; i++) {
             computerDie.roll();
             computerValue = computerDie.getValue();
             playerDie.roll();
@@ -25,13 +22,11 @@ public class EyeDemo2
                 computerPoints += 1;
             else if (playerValue > computerValue)
                 playerPoints += 1;
-            else
-            {
+            else {
                 computerPoints += 0;
                 playerPoints += 0;
             }
         }
-
         if (computerPoints > playerPoints)
             System.out.println("Wygrywa komputer z liczbą punktów: " + computerPoints);
         else if (playerPoints > computerPoints)

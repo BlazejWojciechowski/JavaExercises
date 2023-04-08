@@ -1,12 +1,9 @@
-package Zadania.Proste;
+  package Zadania.Proste;
 
 import java.util.Scanner;
 
-public class ZadProgramistyczneRozdzial3
-{
+public class ZadProgramistyczneRozdzial3 {
     public static void main(String[] args) {
-
-        
         /*
         Scanner keyboard = new Scanner(System.in);
         int day, month, year;

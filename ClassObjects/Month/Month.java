@@ -3,25 +3,20 @@ package Zadania.KlasyObiekty;
 import Zadania.Wyjątki.WrongStringofMonth;
 import Zadania.Wyjątki.WrongValueofMonth;
 
-public class Month
-{
+public class Month {
     private int monthNumber;
-
-    public Month()
-    {
+    public Month() {
         monthNumber = 1;
     }
-    public Month(int monthNumber) throws WrongValueofMonth
-    {
+    public Month(int monthNumber) throws WrongValueofMonth {
+
         if (monthNumber > 12 || monthNumber < 1)
             throw new WrongValueofMonth(monthNumber);
         else
             this.monthNumber = monthNumber;
     }
-    public Month(String month)
-    {
-        switch (month)
-        {
+    public Month(String month) {
+        switch (month) {
             case "Styczeń":
                 this.monthNumber = 1;
                 break;
@@ -62,23 +57,20 @@ public class Month
                 throw new WrongStringofMonth(month);
         }
     }
-    public void setMonthNumber(int month)
-    {
+    public void setMonthNumber(int month) {
+
         if (month > 12 || month < 1)
             this.monthNumber = 1;
         else
             this.monthNumber = month;
     }
-    public int getMonthNumber()
-    {
+    public int getMonthNumber() {
         return monthNumber;
     }
-    public String getMonthName()
-    {
+    public String getMonthName() {
         String monthName = "";
 
-        switch (monthNumber)
-        {
+        switch (monthNumber) {
             case 1:
                 monthName = "Styczeń";
                 break;
@@ -118,15 +110,14 @@ public class Month
         }
         return monthName;
     }
-    public String toString()
-    {
+    public String toString() {
         String str;
         str = getMonthName();
         return str;
     }
-    public boolean equals(Month object2)
-    {
+    public boolean equals(Month object2) {
         boolean status;
+
         if (this.monthNumber == object2.monthNumber)
             status = true;
         else
@@ -134,9 +125,9 @@ public class Month
 
         return status;
     }
-    public boolean graterThan(Month object2)
-    {
+    public boolean graterThan(Month object2) {
         boolean status;
+
         if (this.monthNumber > object2.monthNumber)
             status = true;
         else
@@ -144,9 +135,9 @@ public class Month
 
         return status;
     }
-    public boolean lessThan(Month object2)
-    {
+    public boolean lessThan(Month object2) {
         boolean status;
+
         if (this.monthNumber < object2.monthNumber)
             status = true;
         else
@@ -154,5 +145,4 @@ public class Month
 
         return status;
     }
-
 }

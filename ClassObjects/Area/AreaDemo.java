@@ -2,10 +2,8 @@ package Zadania.KlasyObiekty;
 
 import javax.swing.*;
 
-public class AreaDemo
-{
-    public static void main(String[] args)
-    {
+public class AreaDemo {
+    public static void main(String[] args) {
         Area zero = new Area();
 
         double radius, length, width, area;
@@ -36,6 +34,5 @@ public class AreaDemo
         Area.Area(radius, heigth);
         area = Area.getArea();
         JOptionPane.showMessageDialog(null, String.format("Pole powierzchni walca to %.2f .", area));
-
     }
 }

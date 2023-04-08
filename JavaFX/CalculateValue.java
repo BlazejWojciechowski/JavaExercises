@@ -11,39 +11,27 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class PropertyTax extends Application
-{
+public class PropertyTax extends Application {
     private TextField actualValue;
-
     private Label estimatedValue;
     private Label taxValue;
-
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
-
     @Override
-    public void start(Stage primaryStage)
-    {
+    public void start(Stage primaryStage) {
         actualValue = new TextField();
         Label promtLabel = new Label("Wpisz rzeczywistą wartość nieruchomości");
-
         Button calcButton = new Button("Oblicz");
-
-        calcButton.setOnAction(new EventHandler<ActionEvent>()
-        {
+        calcButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)
-            {
+            public void handle(ActionEvent event) {
                 double actValue = Double.parseDouble(actualValue.getText());
-                
                 double estValue = actValue * 0.60;
                 estimatedValue.setText(String.format("Oszacowana wartość to: %.2f złotych.", estValue));
                 
                 double tax = (estValue / 100) * 0.64;
                 taxValue.setText(String.format("Podatek od wartości oszacowanej to: %.2f złotych.", tax));
-
             }
         });
 

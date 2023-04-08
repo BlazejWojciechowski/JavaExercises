@@ -1,12 +1,9 @@
 package Zadania.KlasyNakładkowe;
 
-public class Telephone
-{
+public class Telephone {
     public final static int FORMATTED = 11;
     public final static int UNFORMATTED = 9;
-
-    public static boolean isFormatted(String str)
-    {
+    public static boolean isFormatted(String str) {
         boolean valid;
 
         if (str.length() == FORMATTED && str.charAt(3) == '-' && str.charAt(7) == '-')
@@ -16,38 +13,29 @@ public class Telephone
 
         return valid;
     }
-    public static String unformat(String str)
-    {
+    public static String unformat(String str) {
         StringBuilder strb = new StringBuilder(str);
 
-        if (isFormatted(str))
-        {
+        if (isFormatted(str)) {
             strb.deleteCharAt(3);
             strb.deleteCharAt(6);
         }
-
         return strb.toString();
     }
-
-    public static String format(String str)
-    {
+    public static String format(String str) {
         StringBuilder strb = new StringBuilder(str);
 
-        if (str.length() == UNFORMATTED)
-        {
+        if (str.length() == UNFORMATTED) {
             strb.insert(3, '-');
             strb.insert(7, '-');
         }
-
         return strb.toString();
     }
-
-    public static String change(String str)
-    {
+    public static String change(String str) {
         StringBuilder strb = new StringBuilder(str);
         char ch;
-        for (int row = 3; row < str.length(); row++)
-        {
+
+        for (int row = 3; row < str.length(); row++) {
             ch = str.charAt(row);
 
             if (ch == 'A' || ch == 'B' || ch == 'C')
@@ -67,7 +55,6 @@ public class Telephone
             else if (ch == 'W' || ch == 'X' || ch == 'Y' || ch == 'Z')
                 strb.setCharAt(row, '9');
         }
-
         return  strb.toString();
     }
 }

@@ -4,8 +4,7 @@ import javax.swing.*;
 import java.util.Date;
 import java.util.Scanner;
 
-public class ZadMetody
-{
+public class ZadMetody {
     /* Zad.1 triangle
     public static void main(String[] args)
     {

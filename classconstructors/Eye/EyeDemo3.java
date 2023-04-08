@@ -2,10 +2,8 @@ package Zadania.KlasyKonstruktory;
 
 import javax.swing.*;
 
-public class EyeDemo3
-{
-    public static void main(String[] args)
-    {
+public class EyeDemo3 {
+    public static void main(String[] args) {
         final int NUM_SIDES = 6;
         String input, answer;
         String thing;
@@ -14,8 +12,7 @@ public class EyeDemo3
 
         Eye fishingGame = new Eye(NUM_SIDES);
 
-        do
-        {
+        do {
          fishingGame.roll();
          value = fishingGame.getValue();
          thing = fishingGame.getThing(value);

@@ -6,9 +6,7 @@ import java.util.Scanner;
 
 public class Citizens {
     private final int[] numberCitizens;
-
-    public Citizens(int[] numCiti)
-    {
+    public Citizens(int[] numCiti) {
         numberCitizens = numCiti;
     }
     public void setNumberCitizens() throws IOException {

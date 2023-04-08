@@ -1,25 +1,18 @@
 package Zadania.KlasyObiekty;
 
-public class FuelGauge
-{
+public class FuelGauge {
     private int gasoline;
-
-    public FuelGauge(int gasoline)
-    {
+    public FuelGauge(int gasoline) {
         this.gasoline = gasoline;
     }
-    public void depositGasoline(int gasoline)
-    {
+    public void depositGasoline(int gasoline) {
         this.gasoline += gasoline;
     }
-    public void withdrawGasoline(int gasoline)
-    {
+    public void withdrawGasoline(int gasoline) {
         this.gasoline -= gasoline;
     }
-    public int getGasoline()
-    {
+    public int getGasoline() {
         return gasoline;
     }
-
 }
 

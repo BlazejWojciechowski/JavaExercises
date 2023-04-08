@@ -2,10 +2,8 @@ package Zadania.KlasyObiekty;
 
 import javax.swing.*;
 
-public class CircleDemo
-{
-    public static void main(String[] args)
-    {
+public class CircleDemo {
+    public static void main(String[] args) {
         double radius = 10;
         double radius2 = 15;
         boolean status;

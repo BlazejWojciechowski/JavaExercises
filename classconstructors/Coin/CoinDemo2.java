@@ -2,10 +2,8 @@ package Zadania.KlasyKonstruktory;
 
 import javax.swing.*;
 
-public class CoinDemo2
-{
-    public static void main(String[] args)
-    {
+public class CoinDemo2 {
+    public static void main(String[] args) {
         final int NUM_SIDES = 2;
         Coin player1 = new Coin();
         Coin player2 = new Coin();
@@ -18,8 +16,7 @@ public class CoinDemo2
         side = player1.getSideUp();
         JOptionPane.showMessageDialog(null, side);
 
-        while (player1Points == 5 && player2Points == 5);
-        {
+        while (player1Points == 5 && player2Points == 5);{
             input = JOptionPane.showInputDialog("Player 1 : 'orzeł' czy 'reszka' ?");
             player1.toss(NUM_SIDES);
             side = player1.getSideUp();
@@ -36,7 +33,6 @@ public class CoinDemo2
             else
                 player2Points -= 1;
         }
-
         if (player1Points == 5)
             JOptionPane.showMessageDialog(null, "Wygrał gracz numer 1.");
         else if (player2Points == 5)

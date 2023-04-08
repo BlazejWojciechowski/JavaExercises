@@ -2,10 +2,8 @@ package Zadania.KlasyObiekty;
 
 import javax.swing.*;
 
-public class FuelMeterDemo
-{
-    public static void main(String[] args)
-    {
+public class FuelMeterDemo {
+    public static void main(String[] args) {
         String input;
 
         int gasoline, meterStatus;
@@ -19,16 +17,14 @@ public class FuelMeterDemo
         FuelGauge gauge = new FuelGauge(gasoline);
         Odometer meter = new Odometer(meterStatus);
 
-
-        while (gasoline >= 1)
-        {
+        while (gasoline >= 1) {
             meter.depositMeter(20);
             gauge.withdrawGasoline(1);
             JOptionPane.showMessageDialog(null, "Aktualny przebieg " + meter.getMeterStatus() +
                                             "\nPozostało paliwa " + gauge.getGasoline());
             gasoline = gauge.getGasoline();
-            if (gasoline == 1)
-            {
+
+            if (gasoline == 1) {
                 input = JOptionPane.showInputDialog("Brak paliwa.\nJeśli chcesz zatankować podaj cyfrę większa od 0." +
                                                     "\nJeśli nie to wpisz 0.");
                 gasoline = Integer.parseInt(input);

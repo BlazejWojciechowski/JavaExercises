@@ -6,10 +6,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class SavingAccountDepoWith
-{
-    public static void main(String[] args) throws IOException
-    {
+public class SavingAccountDepoWith {
+    public static void main(String[] args) throws IOException {
         String input;
         double number, amount, yearRate, monthRate, akuDepo = 0, extra, akuWith = 0, sumAKu;
 
@@ -28,8 +26,7 @@ public class SavingAccountDepoWith
         monthRate = yearRate / 12;
         zad2.setMonthRate(monthRate);
 
-        while (inputFile.hasNext())
-        {
+        while (inputFile.hasNext()) {
             number = inputFile.nextDouble();
             zad2.deposit(number);
             extra = number * zad2.getMonthRate();
@@ -40,17 +37,15 @@ public class SavingAccountDepoWith
         File file2 = new File ("Withdrawals.txt");
         Scanner outpuFIle = new Scanner(file2);
 
-        while (outpuFIle.hasNext())
-        {
+        while (outpuFIle.hasNext()) {
             number = outpuFIle.nextDouble();
             zad2.withdraw(number);
             extra = number * zad2.getMonthRate();
             akuWith += extra;
         }
-
         sumAKu = akuDepo - akuWith;
-
-        JOptionPane.showMessageDialog(null, String.format ("Stan końcowy: %.1f złotych.\nOtrzymane odsetki: " +
+        JOptionPane.showMessageDialog(null, String.format(
+                                        "Stan końcowy: %.1f złotych.\nOtrzymane odsetki: " +
                                         "%.1f złotych.", zad2.getAccountBalance(), sumAKu));
     }
 }

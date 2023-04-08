@@ -1,7 +1,6 @@
 package Zadania.KlasyKonstruktory;
 
-public class ParkingTicket
-{
+public class ParkingTicket {
     private String make;
     private String model;
     private String color;
@@ -11,8 +10,7 @@ public class ParkingTicket
     private String officerName;
     private int officerID;
 
-    public ParkingTicket(ParkedCar object1, ParkingMeter object2, PoliceOfficer object3)
-    {
+    public ParkingTicket(ParkedCar object1, ParkingMeter object2, PoliceOfficer object3) {
         this.make = object1.getMake();
         this.model = object1.getModel();
         this.color = object1.getColor();
@@ -22,40 +20,32 @@ public class ParkingTicket
         this.officerName = object3.getOfficerName();
         this.officerID = object3.getOfficerID();
     }
-    public int getTicket(int parkedMinutes, int boughtMinutes)
-    {
+    public int getTicket(int parkedMinutes, int boughtMinutes) {
         int minutes = 60;
         int value = 0;
         boolean status;
 
-        if (parkedMinutes > boughtMinutes)
-        {
+        if (parkedMinutes > boughtMinutes) {
             status = true;
             value = 50;
         }
         else
             status = false;
 
-        while (!status)
-        {
-            if (parkedMinutes > minutes)
-            {
+        while (!status) {
+            if (parkedMinutes > minutes) {
                 status = true;
                 value += 20;
                 minutes += 60;
             }
         }
-
         return value;
     }
-    public String toString()
-    {
+    public String toString() {
         String str;
-
         str = "MANDAT\nMarka: " + make + "\nModel: " + model + "\nKolor: " + color + "\nRejestracja " + registration +
                 "\nWysokość mandatu: " + getTicket(parkedMinutes, boughtMinutes) + "\nNazwisko oficera " + officerName +
                 "\nID oficera " + officerID;
-
         return str;
     }
 }

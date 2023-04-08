@@ -2,10 +2,8 @@ package Zadania.KlasyObiekty;
 
 import javax.swing.*;
 
-public class LandTractDemo
-{
-    public static void main(String[] args)
-    {
+public class LandTractDemo {
+    public static void main(String[] args) {
         double length, width, area;
         String input;
         boolean status;

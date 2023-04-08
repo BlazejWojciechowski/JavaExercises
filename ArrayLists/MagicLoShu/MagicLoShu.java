@@ -5,7 +5,6 @@ import java.util.Random;
 
 public class MagicLoShu {
     private final int[][] loShu;
-
     public MagicLoShu(int[][] loShu) {
         this.loShu = loShu;
     }

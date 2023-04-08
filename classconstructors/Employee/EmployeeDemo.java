@@ -2,10 +2,8 @@ package Zadania.KlasyKonstruktory;
 
 import Zadania.KlasyKonstruktory.Employee;
 
-public class EmployeeDemo
-{
-    public static void main(String[] args)
-    {
+public class EmployeeDemo {
+    public static void main(String[] args) {
         String name, department, position;
         int idNumber;
 

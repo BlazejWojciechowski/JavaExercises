@@ -3,32 +3,24 @@ package Zadania.KlasyNakładkowe;
 import javax.swing.*;
 import java.util.ArrayList;
 
-public class SalesData
-{
+public class SalesData {
     private ArrayList<Double> array;
     private double sumWeek;
     private double avgDay;
-
     private double sumAll;
     private double avgWeek;
-
     private double highest;
     private double lowest;
-
-    public SalesData(ArrayList<Double> array)
-    {
+    public SalesData(ArrayList<Double> array) {
         this.array = array;
     }
-    public void getSumWeek()
-    {
+    public void getSumWeek() {
         int index = 0;
 
-        for (int row = 0; row < 3; row++)
-        {
+        for (int row = 0; row < 3; row++) {
             double accu = 0;
 
-            for (int col = 0; col < 7; col++)
-            {
+            for (int col = 0; col < 7; col++) {
                 accu += array.get(index);
                 index++;
             }
@@ -39,16 +31,13 @@ public class SalesData
         }
     }
 
-    public void getAvgDay()
-    {
+    public void getAvgDay() {
         int index = 0;
 
-        for (int row = 0; row < 3; row++)
-        {
+        for (int row = 0; row < 3; row++) {
             double accu = 0;
 
-            for (int col = 0; col < 7; col++)
-            {
+            for (int col = 0; col < 7; col++) {
                 accu += array.get(index);
                 index++;
             }
@@ -57,46 +46,37 @@ public class SalesData
                                             "wynosi %.2f " + "złotego.", (row + 1), accu));
         }
     }
-
-    public void getSumAll()
-    {
+    public void getSumAll() {
         double accu = 0;
-        for (int row = 0; row < array.size(); row++)
-        {
+        for (int row = 0; row < array.size(); row++) {
             accu += array.get(row);
         }
-
             JOptionPane.showMessageDialog(null,String.format("Łączna wartość sprzedaży ze wszystkich tygodni" +
                     " wynosi %.2f " + "złotego.", accu));
     }
-    public void getavgWeek()
-    {
+    public void getavgWeek() {
         double accu = 0;
-        for (int row = 0; row < array.size(); row++)
-        {
+
+        for (int row = 0; row < array.size(); row++) {
             accu += array.get(row);
         }
         accu = accu / 3;
 
         JOptionPane.showMessageDialog(null,String.format("Średnia tygodniowa wynosi %.2f złotego.", accu));
     }
-    public void getHighest()
-    {
+    public void getHighest() {
         double highest = 0;
         int position = 0;
         int index = 0;
 
-        for (int row = 0; row < 3; row++)
-        {
+        for (int row = 0; row < 3; row++) {
             double accu = 0;
 
-            for (int col = 0; col < 7; col++)
-            {
+            for (int col = 0; col < 7; col++) {
                 accu += array.get(index);
                 index++;
             }
-            if (this.highest < accu)
-            {
+            if (this.highest < accu) {
                 highest = accu;
                 position = row + 1;
             }
@@ -104,24 +84,20 @@ public class SalesData
         JOptionPane.showMessageDialog(null, String.format("Najwyższa wartość sprzedaży była w tygodniu " +
                                     "numer %d i wynosiła %.2f złotego.", position, highest));
     }
-    public void getLowest()
-    {
+    public void getLowest() {
         double lowest = 0;
         int position = 0;
         int index = 0;
         lowest = this.lowest;
 
-        for (int row = 0; row < 3; row++)
-        {
+        for (int row = 0; row < 3; row++) {
             double accu = 0;
 
-            for (int col = 0; col < 7; col++)
-            {
+            for (int col = 0; col < 7; col++) {
                 accu += array.get(index);
                 index++;
             }
-            if (lowest <= accu)
-            {
+            if (lowest <= accu) {
                 position = row + 1;
             }
             else
@@ -130,6 +106,4 @@ public class SalesData
         JOptionPane.showMessageDialog(null, String.format("Najniższa wartość sprzedaży była w tygodniu " +
                 "numer %d i wynosiła %.2f złotego.", position, lowest));
     }
-
-
 }

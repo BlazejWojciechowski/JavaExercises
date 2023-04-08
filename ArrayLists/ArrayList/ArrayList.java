@@ -4,9 +4,7 @@ import java.util.Random;
 
 public class ArrayList {
     private final int[] arrayList;
-
-    public ArrayList(int[] arrayLi)
-    {
+    public ArrayList(int[] arrayLi) {
         arrayList = arrayLi;
     }
     public void setArrayList(int[] arrayL) {
