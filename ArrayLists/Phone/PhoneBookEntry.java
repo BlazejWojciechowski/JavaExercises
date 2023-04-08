@@ -33,7 +33,6 @@ public class PhoneBookEntry {
             phoneNumber.add(phone);
         }
     }
-
     public void showValues() {
         for (int index = 0; index < lastName.size(); index++) {
             System.out.println(lastName.get(index) + " " + phoneNumber.get(index));

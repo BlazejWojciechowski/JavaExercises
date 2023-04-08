@@ -1,9 +1,7 @@
 package Zadania.KlasyTabliceArrayList;
 
-public class ArrayListDemo
-{
-    public static void main(String[] args)
-    {
+public class ArrayListDemo {
+    public static void main(String[] args) {
         int[] arrayList = new int[20];
 
         ArrayList array = new ArrayList(arrayList);

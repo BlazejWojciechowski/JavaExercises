@@ -2,10 +2,8 @@ package Zadania.KlasyTabliceArrayList;
 
 import java.io.IOException;
 
-public class StepsDemo
-{
-    public static void main(String[] args) throws IOException
-    {
+public class StepsDemo {
+    public static void main(String[] args) throws IOException {
         final int MONTHS = 12;
         final int DAYS = 365;
 
@@ -19,6 +17,5 @@ public class StepsDemo
         yearSteps.setMonthSteps();
         yearSteps.setAvgSteps();
         yearSteps.showValues();
-
     }
 }

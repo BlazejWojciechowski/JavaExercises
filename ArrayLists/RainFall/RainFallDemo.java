@@ -2,12 +2,9 @@ package Zadania.KlasyTabliceArrayList;
 
 import javax.swing.*;
 
-public class RainFallDemo
-{
-    public static void main(String[] args)
-    {
+public class RainFallDemo {
+    public static void main(String[] args) {
         final int ONE_YEAR = 12;
-
         double[] rain = new double[ONE_YEAR];
 
         getValues(rain);
@@ -22,17 +19,14 @@ public class RainFallDemo
         System.exit(0);
     }
 
-    private static void getValues(double[] array)
-    {
+    private static void getValues(double[] array) {
         String input;
 
-
-        for (int i = 0; i < array.length; i++)
-        {
+        for (int i = 0; i < array.length; i++) {
             input = JOptionPane.showInputDialog("Podaj wielkość opadów z miesiąca numer " + (i + 1) + ":");
             array[i] = Double.parseDouble(input);
-            while (array[i] < 0)
-            {
+
+            while (array[i] < 0) {
                 JOptionPane.showMessageDialog(null, "Podałeś nieprawidłową ilość deszczu.");
                 input = JOptionPane.showInputDialog("Podaj wielkość opadów z miesiąca numer " + (i + 1) + ":");
                 array[i] = Double.parseDouble(input);

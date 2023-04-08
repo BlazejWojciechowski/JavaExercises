@@ -4,25 +4,30 @@ import Game.Dice.Dice;
 
 import javax.swing.*;
 
-public class DiceDemo {
-    public static void main(String[] args) {
+public class DiceDemo
+{
+    public static void main(String[] args)
+    {
         final int winPoints = 20;
         final int numRolls = 2;
         int player1Points = 0;
         int player2Points = 0;
         int status;
 
-        while (player1Points < winPoints && player2Points < winPoints) {
+        while (player1Points < winPoints && player2Points < winPoints)
+        {
             Dice player1 = new Dice();
             Dice player2 = new Dice();
-            for (int i = 0; i < numRolls; i++) {
+            for (int i = 0; i < numRolls; i++)
+            {
                 JOptionPane.showMessageDialog(null, "Rzuca gracz numer 1.");
                 player1.getNumber();
                 status = player1.moreThrows();
                 if (status == 0)
                     break;
             }
-            for (int j = 0; j < numRolls; j++) {
+            for (int j = 0; j < numRolls; j++)
+            {
                 JOptionPane.showMessageDialog(null, "Rzuca gracz numer 2.");
                 player2.getNumber();
                 status = player2.moreThrows();

@@ -2,10 +2,8 @@ package Zadania.KlasyTabliceArrayList;
 
 import javax.swing.*;
 
-public class DoubleArrayDemo
-{
-    public static void main(String[] args)
-    {
+public class DoubleArrayDemo {
+    public static void main(String[] args) {
         int [][] arrayList = new int[10][20];
 
         DoubleArray dblArray = new DoubleArray(arrayList);
@@ -29,6 +27,5 @@ public class DoubleArrayDemo
         JOptionPane.showMessageDialog(null, String.format("Suma wszystkich liczb %d\nŚrednia wszystkich " +
                                     "liczb %d\nNajwiększa liczba w wierszu %d\nNajmniejsza liczba w wierszu %d"
                                     , total, avg, highest, lowest));
-
     }
 }

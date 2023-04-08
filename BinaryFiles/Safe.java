@@ -7,10 +7,8 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Safe
-{
-    public static void main (String [] args) throws IOException
-    {
+public class Safe {
+    public static void main (String [] args) throws IOException {
         StringBuilder strb = new StringBuilder();
         ArrayList<String> numbers = new ArrayList<>();
         ArrayList<String> safeNum = new ArrayList<>();
@@ -22,31 +20,25 @@ public class Safe
         String value;
         int length;
 
-        while (inputFile.hasNext())
-        {
+        while (inputFile.hasNext()) {
             numbers.add(inputFile.nextLine());
         }
         inputFile.close();
 
-        for (String i : numbers)
-        {
+        for (String i : numbers) {
             System.out.println(i);
             value = String.valueOf(i);
             strb = new StringBuilder(value + "10");
             safeNum.add(String.valueOf(strb));
         }
-        for (String s : safeNum)
-        {
+        for (String s : safeNum) {
             System.out.println(s);
             strb = new StringBuilder(s);
             strb.delete(s.length() - 1, s.length());
             prevNum.add(String.valueOf(strb));
         }
-
-        for (String p : prevNum)
-        {
+        for (String p : prevNum) {
             System.out.println(p);
         }
-
     }
 }

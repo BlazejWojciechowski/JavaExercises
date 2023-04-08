@@ -1,9 +1,7 @@
 package Zadania.KlasyTabliceArrayList;
 
-public class GradesDemo
-{
-    public static void main(String[] args)
-    {
+public class GradesDemo {
+    public static void main(String[] args) {
         final int NUM = 5;
         final int TESTS = 4;
 
@@ -21,6 +19,5 @@ public class GradesDemo
         grade.setAvgScores();
         grade.setGrades();
         grade.showValues();
-
     }
 }

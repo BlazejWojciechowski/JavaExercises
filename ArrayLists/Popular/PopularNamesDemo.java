@@ -4,10 +4,8 @@ import javax.swing.*;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class PopularNamesDemo
-{
-    public static void main(String[] arg) throws IOException
-    {
+public class PopularNamesDemo {
+    public static void main(String[] arg) throws IOException {
         final int NUM = 200;
         String[] girlNames = new String[NUM];
         String[] boyNames = new String[NUM];
